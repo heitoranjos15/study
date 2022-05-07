@@ -22,12 +22,12 @@ defmodule RPG.CharacterSheet do
 
   def run() do
     welcome()
+
     name = ask_name()
     class = ask_class()
     level = ask_level()
-
     character = %{:name => name, :class => class, :level => level}
+
     IO.inspect(character, label: "Your character")
-    character
   end
 end
